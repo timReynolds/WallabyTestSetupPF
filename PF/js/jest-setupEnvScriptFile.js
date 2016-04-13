@@ -1,0 +1,1 @@
+﻿Object.defineProperty(window, 'sessionStorage', { value: {}, writable: true });
