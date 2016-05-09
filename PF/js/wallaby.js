@@ -9,8 +9,8 @@ module.exports = function (wallaby) {
     return {
         debug: true,
         files: [
-            'jest-setupEnvScriptFile.js',
-            'jest-setupTestFrameworkScriptFile.js',
+            { pattern: 'jest-setupEnvScriptFile.js', instrument: false },
+            { pattern: 'jest-setupTestFrameworkScriptFile.js', instrument: false },
             'package.json',
             'src/**/*.js',
             '!src/**/__tests__/*.js'
